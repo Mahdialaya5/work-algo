@@ -1,0 +1,26 @@
+ALGORITHM algorithm_name
+VAR
+  Set1:array_of integer:=[3, 1, 7, 9];
+  Set2:array_of integer:=[2, 4, 1, 9, 3];
+ 
+  i:=integer:=0;
+  j:=integer:=0;
+  sum:=integer:=0;
+BEGIN
+    FOR i FROM 0 TO Set1.length-1   DO
+       FOR j FROM 0 TO Set2.length-1   DO
+        IF (set1[i]<>Set2[j]) THEN
+             sum:=sum+set1[i]
+        END_IF
+       END_FOR
+
+    FOR j FROM 0 TO Set2.length-1  DO
+       FOR i FROM 0 TO Set1.length-1  DO
+        IF (set1[i]<>Set2[j]) THEN
+             sum:=sum+set2[j]
+        END_IF
+
+END_FOR
+    END_FOR
+write("la somme de element est distinct est"sum )
+END
